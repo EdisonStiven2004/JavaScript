@@ -4,10 +4,13 @@ body{
     color: #fff;
 }
 .contenedor{
-    max-width: 800px;
+    
+    max-width: 1000px;
     margin: auto;
     display: flex;
     justify-content: space-between;
+
+    flex-direction: row;
 }
 .imagen1{
     background-image: url(imagen1.jpg);
@@ -19,14 +22,16 @@ body{
     background-image: url(imagen3.jpg);
 }
 .item{
-    width: 30%;
-    height: 400px;
-    background-size: cover;
+    width: 50%;/* Ancho inicial */
+    height: 300px;/* Ancho máximo para evitar que las imágenes se vuelvan demasiado grandes */
+    background-size: cover;/* Para mantener la proporción de aspecto de la imagen */
     background-position: center center;
     margin: 0 10px;
     transition: .3s;
     position: relative;
     border-radius: 20px;
+
+   
 }
 .item:hover{
     width: 70%;
@@ -45,7 +50,7 @@ body{
     position: absolute;
     bottom: 0;
     transform-origin: left top 0;
-    text-shadow: 2px 2px 3px #000;
+    text-shadow: 2px 2px 3px #000000;
     letter-spacing: 2px;
     left: 20px;
 }
@@ -55,4 +60,22 @@ body{
     right: 20px;
     transition: 1s;
     opacity: 0;
+}
+.item.titulo::after{
+    position: absolute;
+    content: "";
+    width: 120%;
+    background-color: #2c4b1c;
+    left: 0;
+    z-index: -1;
+    transition: .5s;
+    line-height: 40px;
+
+}
+.item:hover.nombre{
+    opacity: 1;
+
+}
+.item:hover.titulo::after{
+    width: 5%;
 }
