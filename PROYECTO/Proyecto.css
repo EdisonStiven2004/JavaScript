@@ -1,0 +1,31 @@
+.formulario{
+    border: solid 2px yellow;
+}
+.encabezado{
+    box-shadow: rgba(0, 0, 0,0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    border-radius:2% ;
+    margin: 1%; 
+}
+.encabezado h2{
+    text-align: center;
+
+}
+.imagen{
+    box-shadow:  rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 5%;
+    width: 8%;
+    margin-left: 1em;
+    margin-right: 2em;
+    
+    
+}
+header{
+    margin-top: 1%;
+}
+.ul  li i {
+    margin-right: 40px;
+}
+form i{
+    
+    margin-right: 2px; 
+}
